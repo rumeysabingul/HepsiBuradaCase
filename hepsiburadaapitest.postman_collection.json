@@ -1,0 +1,652 @@
+{
+	"info": {
+		"_postman_id": "906da023-ae2e-417a-88c3-4cfe04ebb800",
+		"name": "hepsiburadaapitest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allGrocery",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "name",
+						"value": "apple",
+						"type": "text"
+					},
+					{
+						"key": "price",
+						"value": "10",
+						"type": "text"
+					},
+					{
+						"key": "stock",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/allGrocery",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"allGrocery"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "allGrocery 200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "name",
+								"value": "apple",
+								"type": "text"
+							},
+							{
+								"key": "price",
+								"value": "10",
+								"type": "text"
+							},
+							{
+								"key": "stock",
+								"value": "5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/allGrocery",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"allGrocery"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 21:20:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=ce4dfe8099601c4e"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=b1c0feb6d31c201f"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629926500"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"data\": [\n {\n \"id\": 1,\n \"name\": \"apple\",\n \"price\": 3,\n \"stock\": 100\n },\n {\n \"id\": 2,\n \"name\": \"grapes\",\n \"price\": 5,\n \"stock\": 50\n }\n ]\n }"
+				}
+			]
+		},
+		{
+			"name": "allGrocery/{{name}}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer BQBb99vyr6cMpAjUn0_juoNakJO1adSGdJDjNNojUeUPwpQH-XGGpTWtM0qlEJ6aekMP_hUWeEFycw7axCxormdtLYRIiqxEXXxH7J3sGl66QIARDGkk5wwQQb8-H6jnHYVhTkAWJw9bC9VCnWZKWgFci5by__PB7cqMD5rU0G50B9ZnDKe4Ckv-ZMTseMi3yMcGyTIkitL0ZQ9yW8hlhX7i61D2wa3sNXbPlKmwgDPIH_SwXAyowS7_z-bp-8cHTNdSs4R6d-F_vDqFuA0",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "allGrocery/{{name}}",
+					"host": [
+						"allGrocery"
+					],
+					"path": [
+						"{{name}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "allGrocery/{{name}}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer BQBb99vyr6cMpAjUn0_juoNakJO1adSGdJDjNNojUeUPwpQH-XGGpTWtM0qlEJ6aekMP_hUWeEFycw7axCxormdtLYRIiqxEXXxH7J3sGl66QIARDGkk5wwQQb8-H6jnHYVhTkAWJw9bC9VCnWZKWgFci5by__PB7cqMD5rU0G50B9ZnDKe4Ckv-ZMTseMi3yMcGyTIkitL0ZQ9yW8hlhX7i61D2wa3sNXbPlKmwgDPIH_SwXAyowS7_z-bp-8cHTNdSs4R6d-F_vDqFuA0",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/allGrocery?name={{name}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"allGrocery"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "price",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "stock",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n \"data\": [\r\n {\r\n \"id\": 1,\r\n \"name\": \"apple\",\r\n \"price\": 3,\r\n \"stock\": 100\r\n }\r\n ]\r\n}\r\n"
+				}
+			]
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer BQAq46svKEzuoQMPfWSVmY5HXcT9L6pGcBiC8OIAQ7G0as_DkA4nAZI0UJ2k4sngYCuzOKwVhKBolwFqzLn4NprPlW7f4mlLS62JGZGDJOMb5_WEy-R6gzAT8PLpETf6DWmScw_efWxi9dToimZB_bCqBAaULQEOrFWtdkyagVpPSJ9VmUVqx6dqDIWsNLIVv50hCQuwiS98foQ6UX5W4erTC4Clh2GYIRf1i-IQYTock91mUEMUhQLT4YdqRWRD0dk-qF6QucVCKDG8jZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"string\",\r\n    \"price\": 12.3,\r\n    \"stock\": 3\r\n}"
+				},
+				"url": {
+					"raw": "add",
+					"host": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer BQAq46svKEzuoQMPfWSVmY5HXcT9L6pGcBiC8OIAQ7G0as_DkA4nAZI0UJ2k4sngYCuzOKwVhKBolwFqzLn4NprPlW7f4mlLS62JGZGDJOMb5_WEy-R6gzAT8PLpETf6DWmScw_efWxi9dToimZB_bCqBAaULQEOrFWtdkyagVpPSJ9VmUVqx6dqDIWsNLIVv50hCQuwiS98foQ6UX5W4erTC4Clh2GYIRf1i-IQYTock91mUEMUhQLT4YdqRWRD0dk-qF6QucVCKDG8jZw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"apple\",\r\n    \"price\": 12.3,\r\n    \"stock\": 3\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"code": 4,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 21:18:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=f18db4b6385564b0"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5d4d51e88d615c99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629926357"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"name\": \"badRequest\",\n        \"message\": \"Request body has invalid format.\"\n    }\n}"
+				},
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer BQAq46svKEzuoQMPfWSVmY5HXcT9L6pGcBiC8OIAQ7G0as_DkA4nAZI0UJ2k4sngYCuzOKwVhKBolwFqzLn4NprPlW7f4mlLS62JGZGDJOMb5_WEy-R6gzAT8PLpETf6DWmScw_efWxi9dToimZB_bCqBAaULQEOrFWtdkyagVpPSJ9VmUVqx6dqDIWsNLIVv50hCQuwiS98foQ6UX5W4erTC4Clh2GYIRf1i-IQYTock91mUEMUhQLT4YdqRWRD0dk-qF6QucVCKDG8jZw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"apple\",\r\n    \"price\": 12.3,\r\n    \"stock\": 3\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 21:18:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=f18db4b6385564b0"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5d4d51e88d615c99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629926357"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n        \"status\": \"METHOD_NOT_ALLOWED\",\n        \"message\": \"Request method 'GET' not supported\",\n        \"errors\": \"GET method is not supported for this request. Supported method is POST\"\n    \n}"
+				},
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer BQAq46svKEzuoQMPfWSVmY5HXcT9L6pGcBiC8OIAQ7G0as_DkA4nAZI0UJ2k4sngYCuzOKwVhKBolwFqzLn4NprPlW7f4mlLS62JGZGDJOMb5_WEy-R6gzAT8PLpETf6DWmScw_efWxi9dToimZB_bCqBAaULQEOrFWtdkyagVpPSJ9VmUVqx6dqDIWsNLIVv50hCQuwiS98foQ6UX5W4erTC4Clh2GYIRf1i-IQYTock91mUEMUhQLT4YdqRWRD0dk-qF6QucVCKDG8jZw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"apple\",\r\n    \"price\": 12.3,\r\n    \"stock\": 3\r\n}"
+						},
+						"url": {
+							"raw": "https://db28fb3d-ea82-4eb3-b3ee-4a2c9831eb1f.mock.pstmn.io/addd",
+							"protocol": "https",
+							"host": [
+								"db28fb3d-ea82-4eb3-b3ee-4a2c9831eb1f",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"addd"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 21:41:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=f18db4b6385564b0"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5d4d51e88d615c99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629926357"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n        \"status\": \"404\",\n        \"error\": \"Not Found\",\n        \"message\": \"No message available\"\n}"
+				},
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer BQAq46svKEzuoQMPfWSVmY5HXcT9L6pGcBiC8OIAQ7G0as_DkA4nAZI0UJ2k4sngYCuzOKwVhKBolwFqzLn4NprPlW7f4mlLS62JGZGDJOMb5_WEy-R6gzAT8PLpETf6DWmScw_efWxi9dToimZB_bCqBAaULQEOrFWtdkyagVpPSJ9VmUVqx6dqDIWsNLIVv50hCQuwiS98foQ6UX5W4erTC4Clh2GYIRf1i-IQYTock91mUEMUhQLT4YdqRWRD0dk-qF6QucVCKDG8jZw"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"watermelon\",\r\n    \"price\": 17.3,\r\n    \"stock\": 30\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 21:47:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=f18db4b6385564b0"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5d4d51e88d615c99"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629926357"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-7hO0T/XLq3TuFViTu2ZVQQdIY+A\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"200 OK\",\n    \"message\": \"Successfully added\"\n}"
+				}
+			]
+		}
+	]
+}
