@@ -1,0 +1,1 @@
+var index = {"Tags":{},"Specs":{"Hepsi Burada Case":["specs/example.html"]}};
